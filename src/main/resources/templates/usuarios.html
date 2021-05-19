@@ -1,10 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
+
     <title>Title</title>
 </head>
 <body>
-<h2>usuariosss</h2>
+<div class="row">
+    <div class="col-sm">
+
+    </div>
+
+    <div class="col-sm">
+        <table class="table">
+            <thead>
+            <tr>
+                <th scope="col">id</th>
+                <th scope="col">Nome</th>
+                <th scope="col">Estado Civil</th>
+                <th scope="col">Nascimento</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="usuario: ${usuarios}">
+                <th scope="row" th:text="${usuario.id">1</th>
+                <td th:text="${usuario.nome}"></td>
+                <td th:text="${usuario.estadoCivil}"></td>
+                <td th:text="${usuario.dataDeNascimento"></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="col-sm">
+
+    </div>
+
+
+</div>
+
+
 </body>
 </html>
