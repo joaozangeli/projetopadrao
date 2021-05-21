@@ -7,8 +7,9 @@
     <title>usuarios add</title>
 </head>
 <body>
+<h2 class="text-center">adicionar usuario</h2>
 <div class="container" align="center">
-    <div class="text-center">Adicionar Usuario</div>
+
     <form style="width:400px" th:action="@{/usuarios/add}" th:object="${usuario}" method="post">
         <div class="mb-3">
             <label for="nomeId" class="form-label" align="right">Nome</label>
@@ -19,19 +20,20 @@
             <input type="text" class="form-control" id="estadoCivilId" th:field="*{estadoCivil}">
         </div>
         <div class="mb-3">
-            <label for="dataNascimentoId" class="form-label">Nascimento</label>
-            <input type="text" class="form-control" id="dataNascimentoId" th:field="*{estadoCivil}">
+            <label for="dataDeNascimentoId" class="form-label">Nascimento</label>
+            <input type="date" class="form-control" id="dataDeNascimentoId" th:field="*{dataDeNascimento}">
         </div>
 
         <div class="row">
             <div class="col-sm">
                 <a href="/usuarios/" class="btn btn-warning" style="...">cancelar</a>
             </div>
+
+            <div class="col-sm">
+                <input type="submit" class="btn btn-primary" style="..." value="Adicionar"/>
+            </div>
         </div>
 
-        <div class="col-sm">
-            <input type="submit" class="btn btn-primary" style="..." value="Adicionar"/>
-        </div>
 
     </form>
 </div>

@@ -32,6 +32,7 @@ public class UsuarioController {
 
     @GetMapping("/add")
     public String addUsuarioPage(Usuario usuario){
+
         return "usuarios_add";
     }
 
