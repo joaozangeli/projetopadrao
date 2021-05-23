@@ -25,6 +25,16 @@ public class Satelite implements Serializable {
     public Satelite update(Satelite satelite) {
 
         this.latitude = satelite.getLatitude();
+        this.longitude = satelite.getLongitude();
+        this.altitude = satelite.getAltitude();
+        this.velocity = satelite.getVelocity();
+        this.visibility = satelite.getVisibility();
+        this.footprint = satelite.getFootprint();
+        this.timestamp = satelite.getTimestamp();
+        this.daynum = satelite.getDaynum();
+        this.solar_lat = satelite.getSolar_lat();
+        this.solar_lon = satelite.getSolar_lon();
+        this.units = satelite.getUnits();
 
         return this;
     }
