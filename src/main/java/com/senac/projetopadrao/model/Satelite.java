@@ -23,7 +23,7 @@ public class Satelite implements Serializable {
     private String units;
 
     public Satelite update(Satelite satelite) {
-
+        this.name = satelite.getName();
         this.latitude = satelite.getLatitude();
         this.longitude = satelite.getLongitude();
         this.altitude = satelite.getAltitude();
